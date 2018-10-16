@@ -22,9 +22,19 @@ class ViewController: UIViewController {
     private let tiltLimitInf = -0.4
     
     private var sequence: [String] = ["Left","Right","Left","Dwon","Left"]
+    
+    let motion = CMMotionManager()
+    var motionEvents = EventManager<MotionEvent>()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.motion.deviceMotionUpdateInterval = 0.3
+        self.motion.startDeviceMotionUpdates(to: .main) { [unowned self] (data, error) in
+            guard error == nil else {return}
+            guard let data = data else {return}
+            self.motionEvents.addEvent(event: MotionEvent(data: data))
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {

@@ -12,6 +12,7 @@
 		15CD351E21768D6700B2D04D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15CD351C21768D6700B2D04D /* Main.storyboard */; };
 		15CD352021768D6A00B2D04D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15CD351F21768D6A00B2D04D /* Assets.xcassets */; };
 		15CD352321768D6A00B2D04D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15CD352121768D6A00B2D04D /* LaunchScreen.storyboard */; };
+		15CD352B2176930D00B2D04D /* MotionEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CD352A2176930D00B2D04D /* MotionEvent.swift */; };
 		DF1D44F6D59B37114A2DE1B9 /* Pods_ExemploTG_CEP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBF7B6BD7A8D3DC816AFDB75 /* Pods_ExemploTG_CEP.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 		15CD351F21768D6A00B2D04D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15CD352221768D6A00B2D04D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		15CD352421768D6A00B2D04D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15CD352A2176930D00B2D04D /* MotionEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionEvent.swift; sourceTree = "<group>"; };
 		1ABEDCE23B6D886E359B6C6E /* Pods-ExemploTG_CEP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExemploTG_CEP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExemploTG_CEP/Pods-ExemploTG_CEP.debug.xcconfig"; sourceTree = "<group>"; };
 		2BC3D27410BDCE0122D9070A /* Pods-ExemploTG_CEP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExemploTG_CEP.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExemploTG_CEP/Pods-ExemploTG_CEP.release.xcconfig"; sourceTree = "<group>"; };
 		FBF7B6BD7A8D3DC816AFDB75 /* Pods_ExemploTG_CEP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExemploTG_CEP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +69,7 @@
 				15CD351F21768D6A00B2D04D /* Assets.xcassets */,
 				15CD352121768D6A00B2D04D /* LaunchScreen.storyboard */,
 				15CD352421768D6A00B2D04D /* Info.plist */,
+				15CD352A2176930D00B2D04D /* MotionEvent.swift */,
 			);
 			path = ExemploTG_CEP;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15CD352B2176930D00B2D04D /* MotionEvent.swift in Sources */,
 				15CD351B21768D6700B2D04D /* ViewController.swift in Sources */,
 				15CD351921768D6700B2D04D /* AppDelegate.swift in Sources */,
 			);
