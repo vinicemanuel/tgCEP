@@ -12,6 +12,7 @@
 		15CD351E21768D6700B2D04D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15CD351C21768D6700B2D04D /* Main.storyboard */; };
 		15CD352021768D6A00B2D04D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15CD351F21768D6A00B2D04D /* Assets.xcassets */; };
 		15CD352321768D6A00B2D04D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15CD352121768D6A00B2D04D /* LaunchScreen.storyboard */; };
+		DF1D44F6D59B37114A2DE1B9 /* Pods_ExemploTG_CEP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBF7B6BD7A8D3DC816AFDB75 /* Pods_ExemploTG_CEP.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		15CD351F21768D6A00B2D04D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15CD352221768D6A00B2D04D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		15CD352421768D6A00B2D04D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1ABEDCE23B6D886E359B6C6E /* Pods-ExemploTG_CEP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExemploTG_CEP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExemploTG_CEP/Pods-ExemploTG_CEP.debug.xcconfig"; sourceTree = "<group>"; };
+		2BC3D27410BDCE0122D9070A /* Pods-ExemploTG_CEP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExemploTG_CEP.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExemploTG_CEP/Pods-ExemploTG_CEP.release.xcconfig"; sourceTree = "<group>"; };
+		FBF7B6BD7A8D3DC816AFDB75 /* Pods_ExemploTG_CEP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExemploTG_CEP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF1D44F6D59B37114A2DE1B9 /* Pods_ExemploTG_CEP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				15CD351721768D6700B2D04D /* ExemploTG_CEP */,
 				15CD351621768D6700B2D04D /* Products */,
+				96E132FB91F0D9AB9BAB10AD /* Pods */,
+				76ED527FFFABF1F8743EE46F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = ExemploTG_CEP;
 			sourceTree = "<group>";
 		};
+		76ED527FFFABF1F8743EE46F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FBF7B6BD7A8D3DC816AFDB75 /* Pods_ExemploTG_CEP.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		96E132FB91F0D9AB9BAB10AD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1ABEDCE23B6D886E359B6C6E /* Pods-ExemploTG_CEP.debug.xcconfig */,
+				2BC3D27410BDCE0122D9070A /* Pods-ExemploTG_CEP.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 15CD352721768D6A00B2D04D /* Build configuration list for PBXNativeTarget "ExemploTG_CEP" */;
 			buildPhases = (
+				DB8AEF7B6CC3AC0459A2C29D /* [CP] Check Pods Manifest.lock */,
 				15CD351121768D6700B2D04D /* Sources */,
 				15CD351221768D6700B2D04D /* Frameworks */,
 				15CD351321768D6700B2D04D /* Resources */,
+				3C7784EBA557D0A4CBC07934 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C7784EBA557D0A4CBC07934 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ExemploTG_CEP/Pods-ExemploTG_CEP-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CEPSwift/CEPSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CEPSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ExemploTG_CEP/Pods-ExemploTG_CEP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB8AEF7B6CC3AC0459A2C29D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExemploTG_CEP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		15CD351121768D6700B2D04D /* Sources */ = {
@@ -280,9 +355,11 @@
 		};
 		15CD352821768D6A00B2D04D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1ABEDCE23B6D886E359B6C6E /* Pods-ExemploTG_CEP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FM9KNL4G6M;
 				INFOPLIST_FILE = ExemploTG_CEP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -297,9 +374,11 @@
 		};
 		15CD352921768D6A00B2D04D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BC3D27410BDCE0122D9070A /* Pods-ExemploTG_CEP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FM9KNL4G6M;
 				INFOPLIST_FILE = ExemploTG_CEP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
