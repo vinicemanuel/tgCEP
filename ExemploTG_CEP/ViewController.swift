@@ -130,10 +130,12 @@ class ViewController: UIViewController {
 
                 if self.auxSequence.count == 0 && self.gameStatusLabel.text == ""{
                     self.gameStatusLabel.text = "Ganhou!!"
+                    self.phoneSideLabel.text = ""
                 }else if self.auxSequence.count != 0{
                     let value = self.auxSequence.removeFirst()
                     if value != result{
                         self.gameStatusLabel.text = "Pereu!"
+                        self.phoneSideLabel.text = ""
                         self.interactionEvent = nil
                     }
                 }
@@ -157,6 +159,7 @@ class ViewController: UIViewController {
                 self.auxSequence = self.sequence
                 self.timer.invalidate()
                 self.startUserInteraction()
+                self.gameSideLabel.text = ""
             }
         })
     }
