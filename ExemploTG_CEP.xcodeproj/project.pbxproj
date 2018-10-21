@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15239160217BAC0B00B746B9 /* StringEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1523915F217BAC0B00B746B9 /* StringEvent.swift */; };
 		15CD351921768D6700B2D04D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CD351821768D6700B2D04D /* AppDelegate.swift */; };
 		15CD351B21768D6700B2D04D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CD351A21768D6700B2D04D /* ViewController.swift */; };
 		15CD351E21768D6700B2D04D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15CD351C21768D6700B2D04D /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1523915F217BAC0B00B746B9 /* StringEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringEvent.swift; sourceTree = "<group>"; };
 		15CD351521768D6700B2D04D /* ExemploTG_CEP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExemploTG_CEP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15CD351821768D6700B2D04D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15CD351A21768D6700B2D04D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,6 +44,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1523915E217BABEA00B746B9 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				15CD352A2176930D00B2D04D /* MotionEvent.swift */,
+				1523915F217BAC0B00B746B9 /* StringEvent.swift */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
 		15CD350C21768D6700B2D04D = {
 			isa = PBXGroup;
 			children = (
@@ -63,13 +74,13 @@
 		15CD351721768D6700B2D04D /* ExemploTG_CEP */ = {
 			isa = PBXGroup;
 			children = (
+				1523915E217BABEA00B746B9 /* Events */,
 				15CD351821768D6700B2D04D /* AppDelegate.swift */,
 				15CD351A21768D6700B2D04D /* ViewController.swift */,
 				15CD351C21768D6700B2D04D /* Main.storyboard */,
 				15CD351F21768D6A00B2D04D /* Assets.xcassets */,
 				15CD352121768D6A00B2D04D /* LaunchScreen.storyboard */,
 				15CD352421768D6A00B2D04D /* Info.plist */,
-				15CD352A2176930D00B2D04D /* MotionEvent.swift */,
 			);
 			path = ExemploTG_CEP;
 			sourceTree = "<group>";
@@ -216,6 +227,7 @@
 				15CD352B2176930D00B2D04D /* MotionEvent.swift in Sources */,
 				15CD351B21768D6700B2D04D /* ViewController.swift in Sources */,
 				15CD351921768D6700B2D04D /* AppDelegate.swift in Sources */,
+				15239160217BAC0B00B746B9 /* StringEvent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,13 +375,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FM9KNL4G6M;
+				DEVELOPMENT_TEAM = QDWG67866S;
 				INFOPLIST_FILE = ExemploTG_CEP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "home.ExemploTG-CEP";
+				PRODUCT_BUNDLE_IDENTIFIER = home.ExemploTG.CEP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -382,13 +394,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FM9KNL4G6M;
+				DEVELOPMENT_TEAM = QDWG67866S;
 				INFOPLIST_FILE = ExemploTG_CEP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "home.ExemploTG-CEP";
+				PRODUCT_BUNDLE_IDENTIFIER = home.ExemploTG.CEP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
