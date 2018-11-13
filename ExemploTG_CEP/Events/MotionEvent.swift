@@ -10,11 +10,13 @@ import Foundation
 import CEPSwift
 import CoreMotion
 
+typealias Point = (x: Double,y: Double)
+
 class MotionEvent: Event {
     var timestamp: Date
-    var data: CMDeviceMotion
+    var data: Point
     
-    init(data: CMDeviceMotion) {
+    init(data: Point) {
         self.data = data
         self.timestamp = Date()
     }

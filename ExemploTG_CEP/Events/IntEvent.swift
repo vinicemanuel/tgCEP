@@ -1,19 +1,19 @@
 //
-//  InteractionEvent.swift
+//  IntEvent.swift
 //  ExemploTG_CEP
 //
-//  Created by vinicius emanuel on 20/10/2018.
+//  Created by vinicius emanuel on 12/11/18.
 //  Copyright © 2018 vinicius emanuel. All rights reserved.
 //
 
 import Foundation
 import CEPSwift
 
-class StringEvent: Event {
+class IntEvent: Event {
     var timestamp: Date
-    var data: String
+    var data: Int
     
-    init(data: String) {
+    init(data: Int) {
         self.data = data
         self.timestamp = Date()
     }
