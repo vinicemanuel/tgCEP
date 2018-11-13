@@ -1,0 +1,6 @@
+framework module Pods_ExemploTG_CEP {
+  umbrella header "Pods-ExemploTG_CEP-umbrella.h"
+
+  export *
+  module * { export * }
+}
