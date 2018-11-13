@@ -20,9 +20,6 @@ class ViewController: UIViewController {
     
     var sideEventManager = EventManager<SideEvent>()
     var motionEventManager = EventManager<MotionEvent>()
-    
-    var A = EventManager<IntEvent>()
-    var B = EventManager<IntEvent>()
 
     override func viewDidLoad() {
         super.viewDidLoad()
