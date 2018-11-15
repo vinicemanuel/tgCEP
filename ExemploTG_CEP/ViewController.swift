@@ -15,12 +15,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var labelX: UILabel!
     @IBOutlet weak var labelY: UILabel!
     @IBOutlet weak var sideLabel: UILabel!
-        
+    
     private let manager = CMMotionManager()
     
     var sideEventManager = EventManager<SideEvent>()
     var motionEventManager = EventManager<MotionEvent>()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -37,18 +37,17 @@ class ViewController: UIViewController {
         self.manager.startDeviceMotionUpdates(to: OperationQueue.current ?? OperationQueue.main) { (motion, error) in
             if let motion = motion{
                 let point = (motion.gravity.x, motion.gravity.y)
-                self.labelX.text = String(format: "%.1f",motion.gravity.x)
-                self.labelY.text = String(format: "%.1f",motion.gravity.y)
                 self.motionEventManager.addEvent(event: MotionEvent(data: point))
             }
         }
     }
     
     func configsubscribe(){
-        self.motionEventManager.asStream()
-            .subscribe { (motionEvent) in
-                let point = motionEvent.data
-                print(point)
+        self.motionEventManager.asStream().subscribe { (motionEvent) in
+            let point = motionEvent.data
+            self.labelX.text = String(format: "%.2f",point.x)
+            self.labelY.text = String(format: "%.2f",point.y)
+            print(point)
         }
     }
 }
