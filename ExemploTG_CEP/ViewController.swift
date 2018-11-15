@@ -18,6 +18,9 @@ class ViewController: UIViewController {
     
     private let manager = CMMotionManager()
     
+    let limitInf = -0.3
+    let limtSup = 0.3
+    
     var sideEventManager = EventManager<SideEvent>()
     var motionEventManager = EventManager<MotionEvent>()
     
