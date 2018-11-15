@@ -10,11 +10,11 @@ import Foundation
 import CEPSwift
 
 enum Side: String {
-    case left = "Left"
-    case right = "Right"
-    case down = "Down"
-    case up = "Up"
-    case straight = "Straight"
+    case left = "⬅️"
+    case right = "➡️"
+    case down = "⬇️"
+    case up = "⬆️"
+    case straight = "⏹"
 }
 
 class SideEvent: Event {
